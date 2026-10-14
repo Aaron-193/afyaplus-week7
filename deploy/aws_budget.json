@@ -1,0 +1,46 @@
+{
+  "Budget": {
+    "BudgetName": "AfyaPlus-Triage-Monthly-USD-5",
+    "BudgetLimit": {"Amount": "5", "Unit": "USD"},
+    "CostFilters": {},
+    "CostTypes": {
+      "IncludeTax": true,
+      "IncludeSubscription": true,
+      "UseAmortized": false,
+      "IncludeRefund": false,
+      "IncludeCredit": false,
+      "IncludeUpfront": true,
+      "IncludeRecurring": true,
+      "IncludeOtherSubscription": true,
+      "IncludeSupport": true,
+      "IncludeDiscount": true,
+      "UseBlended": false
+    },
+    "TimeUnit": "MONTHLY",
+    "BudgetType": "COST"
+  },
+  "NotificationsWithSubscribers": [
+    {
+      "Notification": {
+        "NotificationType": "ACTUAL",
+        "ComparisonOperator": "GREATER_THAN",
+        "Threshold": 80,
+        "ThresholdType": "PERCENTAGE"
+      },
+      "Subscribers": [
+        {"SubscriptionType": "EMAIL", "Address": "REPLACE_WITH_OWNER_EMAIL"}
+      ]
+    },
+    {
+      "Notification": {
+        "NotificationType": "FORECASTED",
+        "ComparisonOperator": "GREATER_THAN",
+        "Threshold": 100,
+        "ThresholdType": "PERCENTAGE"
+      },
+      "Subscribers": [
+        {"SubscriptionType": "EMAIL", "Address": "REPLACE_WITH_OWNER_EMAIL"}
+      ]
+    }
+  ]
+}

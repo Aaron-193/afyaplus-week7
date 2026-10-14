@@ -1,0 +1,30 @@
+{
+  "name": "AfyaPlus-Triage-Monthly-USD-5",
+  "properties": {
+    "category": "Cost",
+    "amount": 5,
+    "timeGrain": "Monthly",
+    "timePeriod": {
+      "startDate": "2026-10-01T00:00:00Z",
+      "endDate": "2027-10-01T00:00:00Z"
+    },
+    "filter": {},
+    "notifications": {
+      "Actual_80_Percent": {
+        "enabled": true,
+        "operator": "GreaterThanOrEqualTo",
+        "threshold": 80,
+        "contactEmails": ["REPLACE_WITH_OWNER_EMAIL"],
+        "thresholdType": "Actual"
+      },
+      "Forecasted_100_Percent": {
+        "enabled": true,
+        "operator": "GreaterThanOrEqualTo",
+        "threshold": 100,
+        "contactEmails": ["REPLACE_WITH_OWNER_EMAIL"],
+        "thresholdType": "Forecasted"
+      }
+    }
+  },
+  "_submission_note": "Example payload only. Confirm date rules, scope URI, API version, and notification schema for your Azure subscription before submitting."
+}
